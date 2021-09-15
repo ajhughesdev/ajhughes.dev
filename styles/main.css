@@ -8,7 +8,7 @@
 	--light: 240, 248, 255;
 	--shadow: 2px 2px 5px rgb(0 0 0 / 0.5);
 	--border: 1px solid red;
-	
+
 }
 
 *,
@@ -52,6 +52,33 @@ footer {
 	align-items: center;
 }
 
+.copyright-1stline {
+	display: flex;
+}
+
 .copyright-item {
-	padding: 5px 3px;
+	padding: 0 5px;
+}
+
+@media screen and (max-width: 319px) {
+	.x {
+		display: none;
+	}
+
+	.minimum {
+		margin: 100px 15px;
+		text-align: center;
+		color: rgba(var(--dark));
+	}
+}
+
+@media screen and (max-width: 369px) {
+	.copyright {
+		display: flex;
+		flex-direction: row;
+	}
+
+	footer .c {
+		display: none;
+	}
 }
