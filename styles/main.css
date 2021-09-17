@@ -31,6 +31,7 @@ h1 {
 	font-weight: 450;
 	font-size: 2.25rem;
 	padding-left: 6vw;
+	filter: drop-shadow(var(--shadow));
 }
 
 .hamburger {
@@ -39,46 +40,32 @@ h1 {
 	display: flex;
 }
 
-/* The Overlay (background) */
 .overlay {
 	display: flex;
 	flex-direction: column;
-	/* Height & width depends on how you want to reveal the overlay (see JS below) */
 	height: 0;
 	width: 100%;
 	position: fixed;
-	/* Stay in place */
 	z-index: 1;
-	/* Sit on top */
 	left: 0;
 	top: 0;
 	background-color: rgba(var(--blue), 0.9);
-	overflow-x: hidden;
-	/* Disable horizontal scroll */
+	overflow-y: hidden;
 	transition: 450ms;
-	/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-/* Position the content inside the overlay */
 .overlay-content {
 	position: relative;
 	width: 100%;
-	/* 100% width */
 	text-align: center;
-	/* Centered text/links */
 	margin-top: 15%;
-	/* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-/* The navigation links inside the overlay */
 .overlay a {
 	text-decoration: none;
 	font-size: 2rem;
 	color: rgba(var(--light));
 	display: block;
-	/* Display block instead of inline */
-	transition: 0.3s;
-	/* Transition effects on hover (color) */
 }
 
 .overlay svg {
@@ -89,13 +76,11 @@ h1 {
 	padding-bottom: 1.5rem;
 }
 
-/* When you mouse over the navigation links, change their color */
 a:hover,
 a:focus {
 	color: rgba(var(--green));
 }
 
-/* Position the close button (top right corner) */
 .overlay .closebtn {
 	padding: 4vw 6vw;
 }
@@ -107,7 +92,6 @@ svg {
 svg:hover {
 	fill: rgba(var(--green));
 }
-
 
 footer {
 	position: fixed;
@@ -138,8 +122,12 @@ footer {
 	padding: 0 5px;
 }
 
+.green {
+	color: rgba(var(--green));
+}
+
 @media screen and (max-width: 319px) {
-	.x {
+	.full-name {
 		display: none;
 	}
 
@@ -151,7 +139,7 @@ footer {
 }
 
 @media screen and (min-width: 320px) {
-	.minimum {
+	.minimum, .full-name {
 		display: none;
 	}
 }
@@ -162,8 +150,17 @@ footer {
 		flex-direction: row;
 	}
 
-	footer .c {
+	footer .c, .full-name {
 		display: none;
 	}
+}
+
+@media screen and (min-width: 767px) {
+
+	.hamburger,
+	.closebtn {
+		display: none;
+	}
+
 
 }
