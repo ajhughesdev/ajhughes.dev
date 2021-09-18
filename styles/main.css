@@ -159,6 +159,12 @@ footer {
 	}
 }
 
+@media screen and (min-width: 376px) {
+	.full-name {
+		display: none;
+	}
+}
+
 @media screen and (min-width: 767px) {
 
 	.hamburger,
@@ -166,5 +172,8 @@ footer {
 		display: none;
 	}
 
+	.full-name {
+		display: inline-flex;
+	}
 
 }
