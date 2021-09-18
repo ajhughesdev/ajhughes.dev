@@ -21,11 +21,10 @@
 .banner {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	/* position: relative; */
+	position: relative;
 	background-color: rgba(var(--blue));
 	color: rgba(var(--light));
 	align-items: center;
-	/* padding: 0 4vw; */
 }
 
 h1 {
@@ -33,6 +32,12 @@ h1 {
 	font-size: 2.25rem;
 	padding-left: 6vw;
 	filter: drop-shadow(var(--shadow));
+}
+
+.full-name,
+footer .c {
+	display: none;
+	transition: 450ms;
 }
 
 .hamburger {
@@ -94,6 +99,11 @@ svg:hover {
 	fill: rgba(var(--green));
 }
 
+.minimum {
+	text-align: center;
+	margin: 50px;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
@@ -128,28 +138,19 @@ footer {
 }
 
 @media screen and (min-width: 320px) {
-
-	.minimum,
-	.full-name {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.copyright {
-		display: flex;
-		flex-direction: row;
-	}
-
-	footer .c,
-	.full-name {
+	.minimum {
 		display: none;
 	}
 }
 
 @media screen and (min-width: 376px) {
-	.full-name {
-		display: none;
+	.copyright {
+		display: flex;
+		flex-direction: row;
+	}
+
+	footer .c {
+		display: inline-flex;
 	}
 }
 
