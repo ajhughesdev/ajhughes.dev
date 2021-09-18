@@ -34,10 +34,17 @@ h1 {
 	filter: drop-shadow(var(--shadow));
 }
 
-.full-name,
+.full-name-1st,
+.full-name-last,
+.full-name-mid,
 footer .c {
 	display: none;
 	transition: 450ms;
+}
+
+.minimum {
+	text-align: center;
+	margin: 50px;
 }
 
 .hamburger {
@@ -99,11 +106,6 @@ svg:hover {
 	fill: rgba(var(--green));
 }
 
-.minimum {
-	text-align: center;
-	margin: 50px;
-}
-
 footer {
 	position: fixed;
 	bottom: 0;
@@ -137,6 +139,12 @@ footer {
 	color: rgba(var(--green));
 }
 
+@media screen and (min-width: 274px) {
+	.full-name-last {
+		display: inline;
+	}
+}
+
 @media screen and (min-width: 320px) {
 	.minimum {
 		display: none;
@@ -161,8 +169,14 @@ footer {
 		display: none;
 	}
 
-	.full-name {
-		display: inline-flex;
+	.full-name-1st,
+	.full-name-mid {
+		display: inline;
 	}
+}
 
+@media (orientation: landscape) {
+	.overlay-content {
+		margin-top: 1rem;
+	}
 }
