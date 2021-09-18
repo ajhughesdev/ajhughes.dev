@@ -127,18 +127,6 @@ footer {
 	color: rgba(var(--green));
 }
 
-@media screen and (max-width: 319px) {
-	.full-name {
-		display: none;
-	}
-
-	.minimum {
-		margin: 100px 15px;
-		text-align: center;
-		color: rgba(var(--dark));
-	}
-}
-
 @media screen and (min-width: 320px) {
 
 	.minimum,
