@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- global site tag (gtag.js) - google analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-207674709-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -17,21 +17,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>home | ajhughes.dev</title>
-	<!-- Search Engine -->
+	<!-- search engine -->
 	<meta name="description" content="web development portfolio of Andrew J Hughes">
 	<meta name="image" content="https://ajhughes.dev/favicon_io/android-chrome-512x512.png">
-	<!-- Schema.org for Google -->
+	<!-- schema.org for google -->
 	<meta itemprop="name" content="home | ajhughes.dev">
 	<meta itemprop="description" content="web development portfolio of Andrew J Hughes">
 	<meta itemprop="image" content="https://ajhughes.dev/favicon_io/android-chrome-512x512.png">
-	<!-- Twitter -->
+	<!-- twitter -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="home | ajhughes.dev">
 	<meta name="twitter:description" content="web development portfolio of Andrew J Hughes">
 	<meta name="twitter:site" content="@ajhughesdev">
 	<meta name="twitter:creator" content="@ajhughesdev">
 	<meta name="twitter:image:src" content="https://ajhughes.dev/favicon_io/android-chrome-512x512.png">
-	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<!-- open graph general (facebook, pinterest & google+) -->
 	<meta name="og:title" content="home | ajhughes.dev">
 	<meta name="og:description" content="web development portfolio of Andrew J Hughes">
 	<meta name="og:image" content="https://ajhughes.dev/favicon_io/android-chrome-512x512.png">
@@ -39,63 +39,91 @@
 	<meta name="og:site_name" content="ajhughes.dev">
 	<meta name="og:locale" content="en_US">
 	<meta name="og:type" content="website">
-	<!-- Favicon_io -->
+	<!-- favicon_io -->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 	<link rel="manifest" href="favicon_io/site.webmanifest">
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<!-- google fonts -->
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="styles/main.css" />
+		rel="stylesheet" /> -->
+	<link rel="stylesheet" href="styles/main.css" media="screen and (max-width: 767px)" />
+	<link rel="stylesheet" href="styles/min768.css" media="screen and (min-width: 768px)" />
 	<script type="text/javascript" src="scripts/main.js"></script>
 </head>
 
 <body id="container">
-	<div id="myNav" class="overlay">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg"
-				width="24" height="24" viewBox="0 0 24 24">
-				<path
-					d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-			</svg></a>
-		<div class="overlay-content">
-			<a href="#">projects</a>
-			<a href="#">about</a>
-			<a href="#">contact</a>
-		</div>
-	</div>
 	<header class="banner">
-		<h1> <span class="green xs">a</span><span class="full-name-1st">ndrew</span> <span class="green xs">j</span><span
-				class="full-name-mid">ohn</span> <span class="xs">h</span><span class="full-name-last">ughes</span></h1>
+		<div class="title">
+			<h1><span class="green xs">a</span><span class="full-name-1st">ndrew</span> <span class="green xs">j</span><span
+					class="full-name-mid">ohn</span> <span class="xs">h</span><span class="full-name-last">ughes</span></h1>
+			<h2 class="sub">self-taught web design</h2>
+		</div>
 		<span onclick="openNav()" class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" class="hamburger-svg" width="24"
 				height="24" viewBox="0 0 24 24">
 				<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg></span>
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg"
+					width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+				</svg></a>
+			<div class="overlay-content">
+				<ul class="navlinks">
+					<li><a href="#">projects</a></li>
+					<li> <a href="#">about</a></li>
+					<li> <a href="#">contact</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 	<main>
+		<!-- <div class="alignleft">
+			<script type="text/javascript">
+				amzn_assoc_ad_type = "banner";
+				amzn_assoc_marketplace = "amazon";
+				amzn_assoc_region = "US";
+				amzn_assoc_placement = "assoc_banner_placement_default";
+				amzn_assoc_banner_type = "ez";
+				amzn_assoc_p = "9";
+				amzn_assoc_width = "180";
+				amzn_assoc_height = "150";
+				amzn_assoc_tracking_id = "ajhughesdev-20";
+				amzn_assoc_linkid = "1d31fb56472f31dee9959c23e085ba7b";
+			</script>
+			<script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1">
+			</script> -->
 		<div class="minimum">
 			<p>ajhughes.dev is best viewed on screens 320px or wider.</p>
+		</div>
+		<!-- </div> -->
 		</div>
 	</main>
 	<footer>
 		<div class="copyright">
 			<div class="copyright-1stline">
-				<div class="copyright-item a">Copyright</div>
-				<svg xmlns="http://www.w3.org/2000/svg" class="copyright-svg" height="14" width="14" viewBox="0 0 24 24"
+				<div class="copyright-item a">copyright</div>
+				<svg xmlns="http://www.w3.org/2000/svg" class="copyright-svg" height="12" width="12" viewBox="0 0 24 24"
 					alt="copyright symbol">
 					<path
 						d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 15.781c-2.084 0-3.781-1.696-3.781-3.781s1.696-3.781 3.781-3.781c1.172 0 2.306.523 3.136 1.669l1.857-1.218c-1.281-1.826-3.133-2.67-4.993-2.67-3.308 0-6 2.692-6 6s2.691 6 6 6c1.881 0 3.724-.859 4.994-2.67l-1.857-1.218c-.828 1.14-1.959 1.669-3.137 1.669z" />
 				</svg>
-				<div class="copyright-item a">
+				<div class="copyright-item b">
 					<script>
 						document.write(new Date().getFullYear())
 					</script>
 				</div>
 			</div>
-			<div class="copyright-item b"> Andrew J Hughes.</div>
-			<div class="copyright-item c">All Rights Reserved. </div>
+			<div class="copyright-item c"> andrew j hughes.</div>
+			<div class="copyright-item d">all rights reserved. </div>
 		</div>
+		<div class="legal">
+			<div class="policy"><a href="privacypolicy.html">privacy policy</a></div>
+			<div class="tos"><a href="tos.html">terms of service</a></div>
+		</div>
+		<!-- <div class="privacy"><a href="privacypolicy.html" target="_blank">privacy policy</a></div> -->
 	</footer>
 </body>
 
