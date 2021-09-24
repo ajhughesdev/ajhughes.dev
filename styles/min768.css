@@ -5,7 +5,7 @@
 	height: 2000px;
 
 	--green: 66, 223, 197;
-	--blue: 98, 54, 255;
+	--blue: 99, 38, 255;
 	--dark: 28, 28, 31;
 	--light: 240, 248, 255;
 	--shadow: 2px 2px 5px rgb(0 0 0 / 0.5);
@@ -21,8 +21,7 @@
 
 .minimum,
 .hamburger,
-.closebtn,
-.alignleft {
+.closebtn {
 	display: none;
 }
 
@@ -57,7 +56,7 @@ body.header-not-at-top .title {
 	position: absolute;
 	width: 1px;
 	height: 1px;
-	top: 300px;
+	top: 150px;
 	left: 0;
 }
 
@@ -121,6 +120,13 @@ svg:hover {
 	fill: rgba(var(--green));
 }
 
+.alignleft {
+	display: block;
+	position: fixed;
+	bottom: 24px;
+	left: 0;
+}
+
 footer {
 	position: fixed;
 	width: 100%;
@@ -142,7 +148,6 @@ footer {
 	justify-content: left;
 	align-items: center;
 	padding-left: 3vw;
-
 }
 
 .copyright-1stline {
@@ -180,21 +185,17 @@ footer {
 	h2 {
 		font-size: 1.5rem;
 	}
-
-	.alignleft {
-		position: absolute;
-		bottom: 24px;
-		left: 0;
-	}
 }
+
 
 @media screen and (min-width: 1138px) {
 	body.header-not-at-top .banner {
-		display: fixed;
+		position: fixed;
 		top: 0;
 		width: 1138px;
 		left: 50%;
 		margin-left: -569px;
+
 	}
 
 	footer {
@@ -204,10 +205,14 @@ footer {
 		width: 1138px;
 		margin-left: -569px;
 	}
+}
 
+
+@media screen and (min-width: 1496px) {
 	.alignleft {
-		position: absolute;
 		bottom: 0;
-		left: 0;
+		position: sticky;
+		transition: 450ms;
 	}
+
 }
