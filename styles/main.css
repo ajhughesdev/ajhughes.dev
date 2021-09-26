@@ -38,9 +38,8 @@ h1 {
 
 .full-name-1st,
 .full-name-mid,
-.legal,
 .sub,
-.alignleft,
+.legal,
 footer .d {
 	display: none;
 }
@@ -78,7 +77,6 @@ ul {
 	text-align: center;
 	padding-left: unset;
 	grid-template-columns: 1fr;
-
 }
 
 .overlay a {
@@ -119,7 +117,7 @@ footer {
 	width: 100%;
 	background-color: rgba(var(--blue));
 	color: rgba(var(--light));
-	font-weight: 350;
+	font-weight: 200;
 	font-size: .8rem;
 }
 
