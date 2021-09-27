@@ -83,7 +83,6 @@ h2 {
 .navlinks {
 	display: inline-flex;
 	list-style: none;
-	overflow: hidden;
 }
 
 li a {
