@@ -2,11 +2,12 @@
 	box-sizing: border-box;
 	font-family: 'Nunito', sans-serif;
 	overscroll-behavior-y: none;
+	height: 2000px;
 
 	--green: 66, 223, 197;
 	--blue: 99, 38, 255;
 	--dark: 28, 28, 31;
-	--light: 240, 248, 255;
+	--light: 240, 28, 255;
 	--shadow: 2px 2px 5px rgb(0 0 0 / 0.5);
 	--border: 1px solid red;
 }
@@ -27,7 +28,10 @@ header {
 	grid-template-columns: 3fr 1fr;
 	background-color: rgba(var(--blue));
 	color: rgba(var(--light));
-	align-items: center;
+}
+
+.banner>* {
+	align-self: center
 }
 
 h1 {
