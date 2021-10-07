@@ -88,8 +88,7 @@ ul {
 	padding-bottom: 1.5rem;
 }
 
-a:hover,
-a:focus {
+.navlinks span:hover {
 	color: rgba(var(--green));
 }
 
@@ -101,14 +100,15 @@ svg {
 	fill: rgba(var(--light));
 }
 
-svg:hover {
+svg:hover:not(.copyright-svg) {
 	fill: rgba(var(--green));
 }
 
 footer {
 	position: fixed;
 	bottom: 0;
-left: 0; right: 0;
+	left: 0;
+	right: 0;
 	background-color: rgba(var(--blue));
 	color: rgba(var(--light));
 	font-weight: 200;
@@ -146,6 +146,7 @@ footer .a {
 .copyright-item {
 	padding: 0 3px;
 }
+
 .green {
 	color: rgba(var(--green));
 }
@@ -203,4 +204,3 @@ footer .a {
 		margin-top: 0.9rem;
 	}
 }
-

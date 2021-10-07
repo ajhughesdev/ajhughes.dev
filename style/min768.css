@@ -103,7 +103,7 @@ svg {
 	fill: rgba(var(--light));
 }
 
-svg:hover:not(:last-child) {
+svg:hover:not(.copyright-svg) {
 	fill: rgba(var(--green));
 }
 
