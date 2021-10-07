@@ -1,22 +1,15 @@
+@import url("reset.css");
+
 :root {
 	box-sizing: border-box;
 	font-family: 'Nunito', sans-serif;
 	overscroll-behavior-y: none;
-	height: 2000px;
 
 	--green: 66, 223, 197;
 	--blue: 99, 38, 255;
 	--dark: 28, 28, 31;
-	--light: 240, 28, 255;
+	--light: 240, 248, 255;
 	--shadow: 2px 2px 5px rgb(0 0 0 / 0.5);
-	--border: 1px solid red;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-	margin: 0;
 }
 
 header {
@@ -28,10 +21,7 @@ header {
 	grid-template-columns: 3fr 1fr;
 	background-color: rgba(var(--blue));
 	color: rgba(var(--light));
-}
-
-.banner>* {
-	align-self: center
+	align-items: center;
 }
 
 h1 {
@@ -65,7 +55,7 @@ footer .d {
 	z-index: 1;
 	left: 0;
 	top: 0;
-	background-color: rgba(var(--blue), 0.9);
+	background-color: rgba(var(--blue));
 	overflow-y: hidden;
 	transition: 450ms;
 }
@@ -98,35 +88,34 @@ ul {
 	padding-bottom: 1.5rem;
 }
 
-a:hover,
-a:focus {
+.navlinks span:hover {
 	color: rgba(var(--green));
 }
 
 .overlay .closebtn {
-	padding: 4vw 6vw;
+	padding: 6vw 7vw;
 }
 
 svg {
 	fill: rgba(var(--light));
 }
 
-svg:hover {
+svg:hover:not(.copyright-svg) {
 	fill: rgba(var(--green));
 }
 
 footer {
 	position: fixed;
 	bottom: 0;
-	width: 100%;
+	left: 0;
+	right: 0;
 	background-color: rgba(var(--blue));
 	color: rgba(var(--light));
 	font-weight: 200;
 	font-size: .8rem;
-}
-
-.copyright-svg {
-	align-self: center;
+	display: flex;
+	place-content: center;
+	padding: 5px 3vw;
 }
 
 .copyright {
@@ -136,12 +125,26 @@ footer {
 	align-items: center;
 }
 
+.copyright {
+	display: flex;
+}
+
+.copyright-svg {
+	align-self: center;
+	margin: 0 3px;
+}
+
 .copyright-1stline {
 	display: flex;
 }
 
+footer .a {
+	align-self: center;
+	padding-right: 3px;
+}
+
 .copyright-item {
-	padding: 5px;
+	padding: 0 3px;
 }
 
 .green {
