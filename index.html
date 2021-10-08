@@ -1,18 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>home | ajhughes.dev</title>
 		<!-- search engine -->
 		<meta name="description" content="web development portfolio of Andrew J Hughes">
-		<meta name="image" content="https://ajhughes.dev/images/opengraph.png">
-		<!-- schema.org for google -->
-		<meta itemprop="name" content="home | ajhughes.dev">
-		<meta itemprop="description" content="web development portfolio of Andrew J Hughes">
-		<meta itemprop="image" content="https://ajhughes.dev/images/opengraph.png">
+		<meta name="image" content="images/open-graph.svg">
 		<!-- twitter -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="home | ajhughes.dev">
@@ -28,15 +23,24 @@
 		<meta name="og:site_name" content="ajhughes.dev">
 		<meta name="og:locale" content="en_US">
 		<meta name="og:type" content="website">
-		<!-- favicon_io -->
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-		<link rel="manifest" href="favicon_io/site.webmanifest">
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6236ff">
+		<meta name="apple-mobile-web-app-title" content="ajhughes.dev">
+		<meta name="application-name" content="ajhughes.dev">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="theme-color" content="#ffffff">
+		<!-- google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap"
 			rel="stylesheet">
+		<!-- css stylesheets-->
 		<link rel="stylesheet" href="style/main.css" media="screen and (max-width: 767px)" />
 		<link rel="stylesheet" href="style/min768.css" media="screen and (min-width: 768px)" />
 	</head>
@@ -44,10 +48,11 @@
 	<body id="container">
 		<header id="banner" class="banner">
 			<div class="title">
-				<h1><span class="green ">a</span><span class="full-name-1st">ndrew</span>
-					<span class="green ">j</span><span class="full-name-mid">ohn</span>
-					<span class="full-name-last">hughes</span></h1>
-				<h2 id="sub" class="sub">self-taught web design</h2>
+				<h1 itemscope><span itemprop="name"><span class="green ">a</span><span
+							class="full-name-1st">ndrew</span>
+						<span class="green ">j</span><span class="full-name-mid">ohn</span>
+						<span class="full-name-last">hughes</span></span></h1>
+				<h2 id="sub" class="sub">web design from scratch</h2>
 			</div>
 			<span onclick="openNav()" class="hamburger" style="cursor: pointer;">
 				<svg class="hamburger-svg" width="24" height="24" viewBox="0 0 1000 1000" fill="none"
@@ -102,14 +107,16 @@
 				<div class="copyright-item c"> andrew j hughes.</div>
 				<div class="copyright-item d">all rights reserved. </div>
 			</div>
-			<div class="legal">
+			<!-- <div class="legal">
 				<div class="policy"><a href="pages/privacypolicy.html" target="_blank"
 						rel="noreferrer noopener">privacy policy</a></div>
 				<div class="tos"><a href="pages/tos.html" target="_blank"
 						rel="noreferrer noopener">terms of service</a></div>
-			</div>
+			</div> -->
 		</footer>
 		<script src="scripts/main.js" defer></script>
+		<script async defer data-website-id="45c32394-f75f-4524-9852-eda245f23658"
+			src="http://192.168.1.68:3000/umami.js"></script>
 	</body>
 
 </html>

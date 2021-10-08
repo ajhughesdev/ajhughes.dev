@@ -30,6 +30,9 @@
 
 body.header-not-at-top .banner {
 	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	padding: 0 3vw;
 }
 
@@ -190,10 +193,6 @@ footer {
 	}
 
 	body.header-not-at-top .banner {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
 		padding: 0 5vw;
 	}
 
