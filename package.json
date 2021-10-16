@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "html5-boilerplate": "^8.0.0",
-    "normalize.css": "^8.0.1"
+    "chrome-devtools": "^0.0.0"
   }
 }
