@@ -40,7 +40,8 @@
                 <link rel="apple-touch-icon" href="apple-touch-icon.png">
                 <!-- stylesheets -->
                 <link rel="stylesheet" href="css/normalize.css" />
-                <link rel="stylesheet" href="css/main.css" media="screen and (min-width: 254px) and (max-width: 1899px)" />
+                <link rel="stylesheet" href="css/main.css"
+                        media="screen and (min-width: 254px) and (max-width: 1899px)" />
                 <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1900px)" />
                 <meta name="theme-color" content="#6236ff" />
                 <!-- google fonts -->
@@ -66,11 +67,10 @@
                 <header class="banner">
                         <div class="title">
                                 <h1>andrew j hughes</h1>
-                                <p class="sub">full-stack developer</p>
+                                <p class="sub">full stack developer</p>
                         </div>
                         <span onclick="openNav()" class="hamburger" style="cursor: pointer;">
-                                <svg width="24" height="16" viewBox="0 0 24 16" 
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                                 d="M0 7.99005C0 7.30313 0.671573 6.74627 1.5 6.74627H22.5C23.3284 6.74627 24 7.30313 24 7.99005C24 8.67697 23.3284 9.23383 22.5 9.23383H1.5C0.671573 9.23383 0 8.67697 0 7.99005Z" />
                                         <path
@@ -79,12 +79,20 @@
                                                 d="M0 14.7562C0 14.0693 0.671573 13.5124 1.5 13.5124H22.5C23.3284 13.5124 24 14.0693 24 14.7562C24 15.4431 23.3284 16 22.5 16H1.5C0.671573 16 0 15.4431 0 14.7562Z" />
                                 </svg></span>
                         <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                        <svg width="12" height="auto" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                        d="M0.475451 23.5487C-0.125646 22.947 -0.125646 21.9714 0.475451 21.3697L21.3724 0.451286C21.9735 -0.150429 22.9481 -0.150429 23.5492 0.451286C24.1503 1.053 24.1503 2.02857 23.5492 2.63029L2.65222 23.5487C2.05112 24.1504 1.07655 24.1504 0.475451 23.5487Z" />
+                                                <path
+                                                        d="M23.5245 23.5487C22.9235 24.1504 21.9489 24.1504 21.3478 23.5487L0.450823 2.63029C-0.150274 2.02857 -0.150274 1.053 0.450823 0.451287C1.05192 -0.150428 2.02649 -0.150428 2.62759 0.451287L23.5245 21.3697C24.1256 21.9714 24.1256 22.947 23.5245 23.5487Z" />
+                                        </svg></a>
                                 <ul class="navlinks-desktop">
                                         <li class="active"><a href="#">home</a></li>
                                         <div class="overlay-content">
                                                 <ul class="navlinks-mobile">
                                                         <li><a href="#">portfolio</a></li>
-                                                        <li><a href="#">tutorials</a></li>
+                                                        <li><a href="#">blog</a></li>
                                                         <li><a href="#">about</a></li>
                                                 </ul>
                                         </div>
