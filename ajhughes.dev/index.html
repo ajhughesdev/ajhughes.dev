@@ -40,13 +40,14 @@
                 <link rel="apple-touch-icon" href="apple-touch-icon.png">
                 <!-- stylesheets -->
                 <link rel="stylesheet" href="css/normalize.css" />
-                <link rel="stylesheet" href="css/main.css" />
+                <link rel="stylesheet" href="css/main.css" media="screen and (min-width: 254px) and (max-width: 1899px)" />
+                <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1900px)" />
                 <meta name="theme-color" content="#6236ff" />
                 <!-- google fonts -->
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap"
-                        rel="stylesheet">
+                        rel="stylesheet" />
         </head>
 
         <body>
@@ -62,14 +63,24 @@
                                 </g>
                         </svg>
                 </div>
-                <header id="banner" class="banner">
+                <header class="banner">
                         <div class="title">
                                 <h1>andrew j hughes</h1>
                                 <p class="sub">full-stack developer</p>
                         </div>
+                        <span onclick="openNav()" class="hamburger" style="cursor: pointer;">
+                                <svg width="24" height="16" viewBox="0 0 24 16" 
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M0 7.99005C0 7.30313 0.671573 6.74627 1.5 6.74627H22.5C23.3284 6.74627 24 7.30313 24 7.99005C24 8.67697 23.3284 9.23383 22.5 9.23383H1.5C0.671573 9.23383 0 8.67697 0 7.99005Z" />
+                                        <path
+                                                d="M0 1.24378C0 0.55686 0.671573 0 1.5 0H22.5C23.3284 0 24 0.55686 24 1.24378C24 1.9307 23.3284 2.48756 22.5 2.48756H1.5C0.671573 2.48756 0 1.9307 0 1.24378Z" />
+                                        <path
+                                                d="M0 14.7562C0 14.0693 0.671573 13.5124 1.5 13.5124H22.5C23.3284 13.5124 24 14.0693 24 14.7562C24 15.4431 23.3284 16 22.5 16H1.5C0.671573 16 0 15.4431 0 14.7562Z" />
+                                </svg></span>
                         <div id="myNav" class="overlay">
                                 <ul class="navlinks-desktop">
-                                        <li><a href="#" class="active">home</a></li>
+                                        <li class="active"><a href="#">home</a></li>
                                         <div class="overlay-content">
                                                 <ul class="navlinks-mobile">
                                                         <li><a href="#">portfolio</a></li>
@@ -87,7 +98,6 @@
                         </div>
                 </main>
                 <footer>
-                       
                 </footer>
                 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
                 <script src="js/plugins.js"></script>
