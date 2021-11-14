@@ -1,0 +1,27 @@
+{
+  "name": "ajhughes.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:watch": "postcss src/style.css --dir public/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajhughesdev/ajhughes.dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajhughesdev/ajhughes.dev/issues"
+  },
+  "homepage": "https://github.com/ajhughesdev/ajhughes.dev#readme",
+  "devDependencies": {
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "cssnano": "^5.0.10"
+  }
+}
