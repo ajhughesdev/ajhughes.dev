@@ -1,4 +1,6 @@
-.DS_Store
-.vscode/settings.json
+.parcel-cache
 node_modules
 
+public/.DS_Store
+.postcss.config.js.icloud
+public/.index.html.icloud
