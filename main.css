@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Inconsolata;
+  src: url('font/Inconsolata-VariableFont_wdth,wght.woff2') format('woff2-variations');
+  font-style: normal;
+  font-weight: 200 900;
+  font-stretch: 50% 200%;
+}
+
+*,
+*::before,
+*::after {
+  all: unset;
+  display: revert;
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-style: normal;
+  font-stretch: 115%;
+  font-family: Inconsolata;
+  overscroll-behavior: none;
+  height: 100vh;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(253, 100%, 61%);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  filter: drop-shadow(2px 2px 5px hsla(253, 100%, 61%, 0.5));
+}
+
+.circle {
+  display: grid;
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #6236ff;
+}
+
+.circle span {
+  color: #ffffff;
+  place-self: center;
+  font-weight: 575;
+  font-size: 1.75rem;
+}
+
+h1 {
+  font-weight: 650;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center
+} 
+
+#myLinks {
+  display: none;
+  transition: 450ms;
+  gap: 1rem;
+}
+
+#myLinks li {
+  display: flex;
+  border: .0625rem #6236ff solid;
+  border-radius: .625rem;
+  list-style: none;
+  padding: 1rem 0;
+  color: #6236ff;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 575;
+  width: calc(100% - 2.5rem);
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.topnav .hamburger {
+  display: grid;
+  gap: .25rem;
+}
+
+.line {
+  background-color: #6236ff;
+  width: 1.875rem;
+  height: .25rem;
+}
+
+main {
+  margin: 5rem 1.25rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 750;
+  font-stretch: 115%;
+}
+
+main p {
+  margin: 1.5rem 0;
+  line-height: 1.5;
+  font-weight: 375;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: .75rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #6236ff;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.copyright {
+  padding: .5rem .3rem;
+  fill: #ffffff;
+}
+
+.footer-spacing {
+  padding-left: .3rem;
+}
+
+a:any-link {
+  cursor: pointer;
+}
